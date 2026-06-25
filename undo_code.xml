@@ -967,18 +967,33 @@
                             <org.catrobat.catroid.formulaeditor.FormulaElement>
                               <additionalChildren/>
                               <type>STRING</type>
-                              <value> клонов.</value>
+                              <value>Клонов.</value>
                             </org.catrobat.catroid.formulaeditor.FormulaElement>
                           </additionalChildren>
                           <leftChild>
                             <additionalChildren/>
                             <type>STRING</type>
-                            <value>Ваше устройство выдерживает: </value>
+                            <value>Ваше устройство выдерживает </value>
                           </leftChild>
                           <rightChild>
                             <additionalChildren/>
-                            <type>USER_VARIABLE</type>
-                            <value>клоны</value>
+                            <leftChild>
+                              <additionalChildren/>
+                              <leftChild>
+                                <additionalChildren/>
+                                <type>USER_VARIABLE</type>
+                                <value>клоны</value>
+                              </leftChild>
+                              <rightChild>
+                                <additionalChildren/>
+                                <type>NUMBER</type>
+                                <value>3</value>
+                              </rightChild>
+                              <type>OPERATOR</type>
+                              <value>DIVIDE</value>
+                            </leftChild>
+                            <type>FUNCTION</type>
+                            <value>ROUND</value>
                           </rightChild>
                           <type>FUNCTION</type>
                           <value>JOIN3</value>
