@@ -57,6 +57,64 @@
                   <commentedOut>false</commentedOut>
                   <sound reference="../../../../../soundList/sound"/>
                 </brick>
+                <brick type="SetVariableBrick">
+                  <brickId>0bb2f0c8-12e4-42f8-acab-6aa3b0922ffa</brickId>
+                  <commentedOut>false</commentedOut>
+                  <formulaList>
+                    <formula category="VARIABLE">
+                      <additionalChildren/>
+                      <type>STRING</type>
+                      <value>V:2.3.1</value>
+                    </formula>
+                  </formulaList>
+                  <userVariable type="UserVariable" serialization="custom">
+                    <userVariable>
+                      <default>
+                        <initialIndex>-1</initialIndex>
+                        <deviceValueKey>6e6ccd73-fa81-4598-a473-5d288cdd861e</deviceValueKey>
+                        <name>Ver</name>
+                      </default>
+                    </userVariable>
+                  </userVariable>
+                </brick>
+                <brick type="ShowTextColorSizeAlignmentBrick">
+                  <brickId>d9b9f466-22af-40da-afdd-cfb871899439</brickId>
+                  <commentedOut>false</commentedOut>
+                  <formulaList>
+                    <formula category="COLOR">
+                      <additionalChildren/>
+                      <type>STRING</type>
+                      <value>#FF0000</value>
+                    </formula>
+                    <formula category="Y_POSITION">
+                      <additionalChildren/>
+                      <rightChild>
+                        <additionalChildren/>
+                        <type>NUMBER</type>
+                        <value>456</value>
+                      </rightChild>
+                      <type>OPERATOR</type>
+                      <value>MINUS</value>
+                    </formula>
+                    <formula category="SIZE">
+                      <additionalChildren/>
+                      <type>NUMBER</type>
+                      <value>120.0</value>
+                    </formula>
+                    <formula category="X_POSITION">
+                      <additionalChildren/>
+                      <rightChild>
+                        <additionalChildren/>
+                        <type>NUMBER</type>
+                        <value>923</value>
+                      </rightChild>
+                      <type>OPERATOR</type>
+                      <value>MINUS</value>
+                    </formula>
+                  </formulaList>
+                  <userVariable reference="../../brick[2]/userVariable"/>
+                  <alignmentSelection>1</alignmentSelection>
+                </brick>
               </brickList>
               <commentedOut>false</commentedOut>
               <scriptId>0515d32e-5586-443b-9c28-53ac1731998c</scriptId>
@@ -12583,6 +12641,7 @@
     <userVariable reference="../../scenes/scene[4]/objectList/object[2]/scriptList/script[2]/brickList/brick/userVariable"/>
     <userVariable reference="../../scenes/scene[6]/objectList/object[5]/scriptList/script[7]/brickList/brick/loopBricks/brick/elseBranchBricks/brick/userVariable"/>
     <userVariable reference="../../scenes/scene[6]/objectList/object[20]/scriptList/script[2]/brickList/brick/userVariable"/>
+    <userVariable reference="../../scenes/scene/objectList/object/scriptList/script/brickList/brick[2]/userVariable"/>
   </programVariableList>
   <programListOfLists/>
   <programMultiplayerVariableList/>
