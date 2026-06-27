@@ -9301,19 +9301,30 @@
                   <brickId>9b4c132d-3f23-4d61-b213-f793285d6fda</brickId>
                   <commentedOut>false</commentedOut>
                   <loopBricks>
-                    <brick type="MoveNStepsBrick">
-                      <brickId>9957c2df-e8c1-4660-92eb-955384a6c879</brickId>
+                    <brick type="ChangeXByNBrick">
+                      <brickId>c1269338-a730-4ee2-9ef1-9d71b4d6e27e</brickId>
                       <commentedOut>false</commentedOut>
                       <formulaList>
-                        <formula category="STEPS">
+                        <formula category="X_POSITION_CHANGE">
                           <additionalChildren/>
                           <rightChild>
                             <additionalChildren/>
                             <type>NUMBER</type>
-                            <value>3</value>
+                            <value>10</value>
                           </rightChild>
                           <type>OPERATOR</type>
                           <value>MINUS</value>
+                        </formula>
+                      </formulaList>
+                    </brick>
+                    <brick type="WaitBrick">
+                      <brickId>65b7572c-b012-4f83-99cb-84300fd395f8</brickId>
+                      <commentedOut>false</commentedOut>
+                      <formulaList>
+                        <formula category="TIME_TO_WAIT_IN_SECONDS">
+                          <additionalChildren/>
+                          <type>NUMBER</type>
+                          <value>1.0</value>
                         </formula>
                       </formulaList>
                     </brick>
@@ -9951,7 +9962,7 @@
                 <brick type="GoToBrick">
                   <brickId>bcb9ba26-ee4d-4d77-9fca-ee90fc081626</brickId>
                   <commentedOut>false</commentedOut>
-                  <destinationSprite reference="../../../../../../../../scene[6]/objectList/object[5]"/>
+                  <destinationSprite reference="../../../../../../object[5]"/>
                   <spinnerSelection>82</spinnerSelection>
                 </brick>
                 <brick type="ShowBrick">
@@ -12004,7 +12015,7 @@
                     <brick type="GoToBrick">
                       <brickId>01b2d330-6644-48ce-9ca9-456cbf25f29c</brickId>
                       <commentedOut>false</commentedOut>
-                      <destinationSprite reference="../../../../../../../../../../scene[6]/objectList/object[7]"/>
+                      <destinationSprite reference="../../../../../../../../object[7]"/>
                       <spinnerSelection>82</spinnerSelection>
                     </brick>
                     <brick type="IfThenLogicBeginBrick">
@@ -12116,7 +12127,7 @@
                     <brick type="GoToBrick">
                       <brickId>78fc9c08-88f0-4e2d-9e9e-9713ebfb02f4</brickId>
                       <commentedOut>false</commentedOut>
-                      <destinationSprite reference="../../../../../../../../../../scene[6]/objectList/object[7]"/>
+                      <destinationSprite reference="../../../../../../../../object[7]"/>
                       <spinnerSelection>82</spinnerSelection>
                     </brick>
                     <brick type="IfThenLogicBeginBrick">
